@@ -2,21 +2,12 @@
   gather_facts: False
   vars_files:
     - vars/ec2.yaml
-  vars:
-    keypair: default
-    aws_tags:
-      app: web
-    instance_type: t2.nano
-    security_group: default
-    ami_id: ami-9887c6e7
-    region: us-east-1
-
   tasks:
     - name: Launch instance
       ec2:
         aws_access_key: "{{ ec2_access_key }}"
         aws_secret_key: "{{ ec2_secret_key }}"
-        key_name: "{{ keypair }}"
+        key_name: "{{ key_pair }}"
         group: "{{ security_group }}"
         instance_type: "{{ instance_type }}"
         image: "{{ ami_id }}"

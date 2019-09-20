@@ -1,0 +1,7 @@
+key_pair: default
+aws_tags:
+  app: web
+instance_type: t2.nano
+security_group: default
+ami_id: ami-9887c6e7
+region: us-east-1

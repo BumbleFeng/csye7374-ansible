@@ -17,7 +17,7 @@
 
 ### `launch-web-server.yaml`
 
-Use `ansible-playbook -i hosts.ini launch-web-server.yaml`.
+Use `ansible-playbook -i hosts.ini launch-web-server.yaml -e "ec2_access_key=***** ec2_secret_key=******"`.
 
 You can change the private key for remote server based on your key pair in `ansible.cfg` file.
 

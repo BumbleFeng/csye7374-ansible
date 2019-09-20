@@ -5,4 +5,3 @@
 
 *.retry
 
-vars/ec2.yaml
